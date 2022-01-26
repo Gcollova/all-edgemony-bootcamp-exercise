@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 800px;
+    height: 500px;
+    position: relative;
+
+}
+.board{
+     width: 800px;
+     height: 500px;
+     background: url(/img/background.png);
+     background-size: cover;
+     position: absolute;
+     transition: all 0.3s linear;
+     z-index: 1;
+     opacity: 0.6;
+}
+.floor{
+    background: url(/img/floor.png);
+
+    height: 30px;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    bottom: 0;
+    transition: all 0.3s linear;
+    z-index: 2;
+}
+
+.player{
+    width: 70px;
+    height: 100px;
+    background: red;
+    background: url(/img/supermario.png);
+    background-size: cover;
+    background-position-x: 70px;
+    position: absolute;
+    z-index: 3;
+    bottom: 23px;
+    left: 100px
+    
+}
+.player-movement{
+    background-position-x: 0px;
+}
+.backward{
+    width: 70px;
+    height: 100px;
+    background: red;    
+    background-position-x: 0px;
+    background: url(/img/supermario_sx.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+    bottom: 23px;
+    left: 100px
+}
+.backward.player-movement{
+    background-position-x: 70px;
+}

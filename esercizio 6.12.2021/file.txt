@@ -1,0 +1,7 @@
+
+
+
+ prodotto : patate quantity:3
+ prodotto : patate quantity:6
+ prodotto : patate quantity:9
+ prodotto : undefined quantity:undefined

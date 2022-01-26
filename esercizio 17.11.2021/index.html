@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/common.css">
+    <link rel="stylesheet" href="/style/normalize.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Best Movies</h1>
+        
+    </header>
+    <main >
+        <div id="my-exercise">
+            <div id="table-header">
+                <div id="search-div">
+                    <label for="search">Search</label>
+                <input type="text" name="search" id="input">
+               <img  id="lens" src="https://img.icons8.com/ios/50/000000/search--v1.png"/>
+                </div>
+                <div id="fav-div">
+                    <p>Favourites</p>
+                    <button name="fav-modal" id="fav-modal"><img src="https://img.icons8.com/office/16/000000/add-to-favorites--v2.png"/></button>
+                    <a href="#add">Add a Film</a>
+                </div>
+               
+            </div>
+            <div id="table-content">
+                
+                <ul id="container">
+                    <p>caricamento in corso...</p>                    
+                </ul>
+            </div>
+            <div id="table-footer">
+                
+            </div>
+        </div>
+    </main>
+    <div id="favourites" class=" modals">
+        <h2>Favourites</h2>
+        
+        <div id="favourites-list"></div>
+        <button id="fav-close">Chiudi</button>
+    </div>
+    <div id="description" class=" modals">
+        <h2>Description</h2>
+        
+        <div id="description-div"></div>
+        <button id="des-close">Chiudi</button>
+    </div>
+    <footer>
+        <h3>ciao</h3>
+    </footer>
+    <script type="module" src="/js/index.js"></script>
+</body>
+</html>

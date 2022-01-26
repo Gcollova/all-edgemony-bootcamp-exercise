@@ -1,0 +1,772 @@
+/* -------------------------------POSITION--------------------------------------------------- */
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: auto;
+  max-height: 600px;
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  transition: all 0.5s ease;
+  z-index: 6;
+  border-bottom: 3px solid #fc9700;
+  border-left: 2px solid #fc9700;
+ 
+}
+
+.left {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.hidden-right {
+  height: 300px;
+  top: -1000px;
+  
+}
+.hidden-left {
+  left: -453px;
+}
+/* -------------------------------/POSITION--------------------------------------------------- */
+body {
+  font-family: "Roboto", sans-serif;
+}
+body h3 {
+  margin: 0;
+}
+
+/* ---------------------------------------------------HEADER------------------------------------------------------------------ */
+header {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  z-index: 11;
+
+  color: #000;
+  transition: all 0.6s ease;
+  
+}
+header:hover{
+  color: #fff;
+  background-color: #131921;
+}
+header:hover .main-header .sidebar{
+  filter: invert();
+}
+.main-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 100px;
+}
+.main-header h1 {
+  padding: 10px 0 10px 80px;
+  font-size: 30px;
+}
+
+/* ---------------------------------------------------SIDE BAR------------------------------------------------------------------ */
+.main-header .sidebar span button {
+  background: none;
+  border: none;
+  border: 2px solid transparent;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+}
+.main-header .sidebar span button {
+  height: 35px;
+  width: 35px;
+  
+  background-image: url(https://img.icons8.com/ios/35/000000/menu--v5.png);
+  transition: all 0.5s ease;
+}
+
+.main-header .sidebar span button:hover {
+  background-image: url(https://img.icons8.com/ios/35/000000/forward--v3.png);
+  
+}
+/* ---------------------------------------------------/SIDE BAR------------------------------------------------------------------ */
+
+/* ---------------------------------------------------CART------------------------------------------------------------------ */
+.main-header .cart {
+  display: flex;
+  align-items: center;
+  padding: 10px 50px 10px 0;
+}
+.main-header .cart span {
+  display: flex;
+  align-items: center;
+}
+
+.main-header .cart span button {
+ 
+  background-image: url(https://img.icons8.com/color/40/000000/shopping-cart.png);
+  background-color: transparent ;
+  height: 40px;
+  width: 40px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  margin: 0 10px 0 0;
+  transition: all 0.4s ease;
+}
+.main-header .cart span button:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+.main-header .cart .counter {
+  font-size: 20px;
+}
+
+/* ---------------------------------------------------/CART------------------------------------------------------------------ */
+
+/* ---------------------------------------------------/HEADER------------------------------------------------------------------ */
+
+/* ---------------------------------------------------MAIN------------------------------------------------------------------ */
+/* ---------------------------------------------------MAIN ALERT------------------------------------------------------------------ */
+main .alert {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  position: absolute;
+  height: 200px;
+  width: 500px;
+  background-color: #131921;
+  top: 120px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  
+  
+  z-index: 98;
+  transition: all 0.6s ease;
+  
+}
+main .alert h2{
+  margin: 0;
+  margin-top: 0;
+}
+main .alert .alert-btn{
+  margin: 20px 0 0px 0;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.6s ease;
+}
+main .alert .alert-btn:hover{
+  transform: scale(1.2);
+  color: #fff;
+  background-color: #fc9700;
+}
+main .disappear{
+  top: -600px;
+}
+
+/* ---------------------------------------------------/MAIN ALERT------------------------------------------------------------------ */
+main {
+  height: calc(100vh - 30px);
+  overflow-x: hidden;
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+/* ---------------------------------------------------MODALS------------------------------------------------------------------ */
+main .modals {
+  font-size: 15px;
+  color: white;
+  width: 300px;
+  background-color: #26292e;
+}
+main .modals ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 20px;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+main .modals a:hover {
+  color: #fc9700;
+}
+main .modals a {
+  color: white;
+  text-decoration: none;
+}
+/* ---------------------------------------------------SIDEBAR------------------------------------------------------------------ */
+main .left {
+  border-bottom: 3px solid #fc9700;
+  border-right: 2px solid #fc9700;
+  z-index: 10;
+}
+main .left ul {
+  padding-inline-start: 30px;
+}
+
+main .left ul li {
+  margin: 10px;
+  transition: all 0.9s ease;
+}
+main .left ul li:hover {
+  transform: scale(1.1);
+  color: #fc9700;
+}
+/* ---------------------------------------------------/SIDEBAR MODAL------------------------------------------------------------------ */
+/* ---------------------------------------------------CART MODAL------------------------------------------------------------------ */
+main .modals .cart-container {
+  height: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: auto;
+  position: relative;
+  
+}
+main .modals .cart-container::-webkit-scrollbar {
+  display: none;
+}
+main .modals .cart-container ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  font-size: 15px;
+}
+main .modals .cart-container ul li {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 10px;
+}
+main .modals .cart-container ul li .product-counter{
+  border: 1px solid #131921;
+  border-radius: 5px;
+  margin-left: 5px;
+  width: 35px;
+}
+/* ---------------------------------------------------/CART DELETE BUTTON------------------------------------------------------------------ */
+main .modals .cart-container ul li button{
+  color: #fff;
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(144, 0, 0);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+main .modals .cart-container ul li button:hover{
+  transform: scale(1.25);
+  cursor: pointer;
+}
+main .checkout-div{
+  border-radius: 5px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  
+  
+  top: 100px;
+  
+  height: auto;
+  width: 350px;
+ 
+  margin: 70px 0 0 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .checkout-div form{
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+main .checkout-div form input{
+  margin: 5px 0;
+}
+main .checkout-div form p{
+  border: 1px solid #000;
+}
+
+main .checkout-div form div{
+  display: flex;
+  justify-content: space-around;
+}
+main .checkout-div form div a{
+  color: #fff;
+  padding: 5px;
+  margin: 20px 10px 0px 10px;
+  background-color: #131921;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.6s ease;
+  text-decoration: none;
+
+}
+main .checkout-div form div button{
+  color: #fff;
+  padding: 5px;
+  margin: 20px 10px 0px 10px;
+  background-color: #131921;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.6s ease;
+
+}
+main .checkout-div form div a:hover{
+  transform: scale(1.12);
+  color: #fff;
+  background-color: #fc9700;
+  cursor: pointer;
+}
+main .checkout-div form div button:hover{
+  transform: scale(1.12);
+  color: #fff;
+  background-color: #fc9700;
+  cursor: pointer;
+}
+/* ---------------------------------------------------/CART DELETE BUTTON------------------------------------------------------------------ */
+/* ---------------------------------------------------CART CHECKOUT BUTTON------------------------------------------------------------------ */
+main .modals .checkout{
+  padding: 6px;
+  width: auto;
+  margin: 0 0 10px 0;
+  color: #fc9700;
+  background-color: #131921;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: all 0.6s ease;
+}
+main .modals .checkout:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/* ---------------------------------------------------/CART CHECKOUT BUTTON------------------------------------------------------------------ */
+/* ---------------------------------------------------/CART MODAL------------------------------------------------------------------ */
+/* ---------------------------------------------------/MODALS------------------------------------------------------------------ */
+main .main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 15px 30px 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+main #all-product {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* ---------------------------------------------------SINGLE PRODUCT------------------------------------------------------------------ */
+main .product {
+  color: #fff;
+  border: 3px solid #131921;
+  border-radius: 10px;
+  background-color: #131921;
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  min-height: 280px;
+  width: 200px;
+  min-width: 170px;
+  
+
+  margin: 0 100px 15px 100px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  
+}
+main .product:hover {
+  box-shadow: 2px 2px 15px 2px black;
+}
+
+/* ---------------------------------------------------SINGLE PRODUCT DESCRIPTION------------------------------------------------------------------ */
+main .product .description {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  justify-content: center;
+  position: absolute;
+  /* background-size: cover; */
+  top: -400px;
+  width: 150px;
+  height: 15px;
+  font-size: 11px;
+  overflow: auto;
+  background: #ffffffdf;
+  padding: 20px 25px 120px 25px;
+  margin: 10px 0 0 0;
+  transition: all 0.4s ease;
+  z-index: 5;
+}
+main .product .description::-webkit-scrollbar {
+  display: none;
+}
+
+main .product:hover .hidden{
+  transform: translateY(400px);
+  
+}
+
+/* ---------------------------------------------------/SINGLE PRODUCT DESCRIPTION------------------------------------------------------------------ */
+
+/* ---------------------------------------------------SINGLE PRODUCT BUTTON------------------------------------------------------------------ */
+main .product .add-to-cart {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  color: #fc9700;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #131921;
+  transition: all 0.4s ease;
+}
+main .product .add-to-cart:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/* ---------------------------------------------------/SINGLE PRODUCT BUTTON------------------------------------------------------------------ */
+/* ---------------------------------------------------SINGLE PRODUCT TITLE/IMAGE/PRICE------------------------------------------------------------------ */
+main .product .img-div{
+  background-color: white;
+  width: 100%;
+  height: 180px;
+}
+main .product img {
+  padding-top: 20px;
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+main .product:hover img {
+  filter: blur(2px);
+}
+
+main .product .info p {
+  padding-bottom: 10px;
+  margin: 10px 5px 0 5px;
+}
+
+main .title-products{
+  margin-top: 70px;
+}
+/* ---------------------------------------------------/SINGLE PRODUCT TITLE/IMAGE/PRICE------------------------------------------------------------------ */
+/* ---------------------------------------------------/SINGLE PRODUCT------------------------------------------------------------------ */
+.product-final{
+  
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  min-height: 280px;
+  width: 200px;
+  min-width: 170px;
+  border: 3px solid #fff;
+
+  margin: 0 100px 5px 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.product-final:hover{
+  border: 3px solid #fc9700;
+}
+.exit-button{
+  color: #fff;
+  padding: 5px;
+  margin: 20px 10px 0px 10px;
+  background-color: #131921;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.6s ease;
+}
+.exit-button:hover{
+  transform: scale(1.12);
+  color: #fff;
+  background-color: #fc9700;
+  cursor: pointer;
+
+}
+.all-product{
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+}
+
+/* ---------------------------------------------------/MAIN------------------------------------------------------------------ */
+
+/* ---------------------------------------------------FOOTER------------------------------------------------------------------ */
+footer {
+  font-size: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  height: 30px;
+  background-color: #131921;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+footer .about a {
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  cursor: pointer;
+}
+footer .about a:hover {
+  color: #fc9700;
+}
+/* ---------------------------------------------------/FOOTER------------------------------------------------------------------ */
+
+
+
+
+  
+ 
+
+@media only screen and (max-width: 1200px) {
+  
+  main .modals .cart-container ul li {
+    font-size: 20px;
+    
+  }
+  main .modals{
+    width: 100%;
+  }
+  
+  .hidden-right {
+    height: 300px;
+    top: -1000px;
+    
+  }
+  .hidden-left {
+    left: -1205px;
+  }
+  main .product{
+    font-size: 1.2rem;
+  }
+  main .product .hidden{
+    font-size: 1.2rem;
+  }
+  main .product:hover .hidden{
+    transform: none;
+    
+  }
+  main .product:hover img {
+    filter: none;
+  }
+  main .product:hover .info {
+    filter: none;
+  }
+  .main-header .sidebar span button {
+    height: 35px;
+    width: 35px;
+    
+    background-image: url(https://img.icons8.com/ios/35/000000/menu--v5.png);
+    transition: none;
+  }
+  .main-header .sidebar span button:hover {
+    background-image: url(https://img.icons8.com/ios/35/000000/menu--v5.png);
+    
+  }
+  .main-header .cart span button {
+ 
+    background-image: url(https://img.icons8.com/color/40/000000/shopping-cart.png);
+    background-color: transparent ;
+    height: 40px;
+    width: 40px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 0 10px 0 30px;
+    transition: all 0.4s ease;
+  }
+}
+@media only screen and (max-width: 900px) {
+  main .modals .checkout{
+    font-size: 1.3rem;
+    padding: 6px;
+    width: auto;
+    margin: 0 0 10px 0;
+    color: #fc9700;
+    background-color: #131921;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+  }
+  
+  main .modals{
+    width: 100%;
+  }
+  .hidden-right {
+    height: 300px;
+    top: -1000px;
+    
+  }
+  .hidden-left {
+    left: -905px;
+  }
+  main .product:hover .hidden{
+    transform: none;
+    
+  }
+  main .product:hover img {
+    filter: none;
+  }
+  main .product:hover .info {
+    filter: none;
+  }
+  .main-header .sidebar span button {
+    height: 25px;
+    width: 25px;
+    
+    background-image: url(https://img.icons8.com/ios/25/000000/menu--v5.png);
+    transition: none;
+  }
+  .main-header .sidebar span button:hover {
+    background-image: url(https://img.icons8.com/ios/25/000000/menu--v5.png);
+   
+  }
+  .main-header .cart span button {
+ 
+    background-image: url(https://img.icons8.com/color/30/000000/shopping-cart.png);
+    background-color: transparent ;
+    height: 30px;
+    width: 30px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 0 10px 0 30px;
+    transition: all 0.4s ease;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  body{
+    font-size: 1.3rem;
+  }
+  main .left {
+    width: 100%;
+    border-right: none;
+    
+  }
+  
+  .main-header .sidebar span button {
+    height: 25px;
+    width: 25px;
+    
+    background-image: url(https://img.icons8.com/ios/25/000000/menu--v5.png);
+    transition: none;
+  }
+  .main-header .sidebar span button:hover {
+    background-image: url(https://img.icons8.com/ios/25/000000/menu--v5.png);
+    
+  }
+  .main-header .cart {
+    padding: 10px 25px 10px 0;
+    
+  }
+  .main-header .cart span button {
+ 
+    background-image: url(https://img.icons8.com/color/30/000000/shopping-cart.png);
+    background-color: transparent ;
+    height: 30px;
+    width: 30px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 0 10px 0 0px;
+    transition: all 0.4s ease;
+  }
+  .main-header h1 {
+    padding: 10px 0 10px 50px;
+    font-size: 1.2rem;
+  }
+  main .alert {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    position: absolute;
+    height: 200px;
+    width: 250px;
+    background-color: #131921;
+    top: 120px;
+    left: 0px;
+    right: 0px;
+    margin: auto;      
+    z-index: 98;
+    transition: all 0.6s ease;    
+  }
+  main .alert h2{
+    font-size: 20px;
+  }
+  main .disappear{
+    top: -600px;
+  }
+}
+@media only screen and (max-width: 500px){
+  header {
+    width: 100%;
+    
+  }
+  .main-header .sidebar span button {
+    height: 25px;
+    width: 25px;
+    
+    background-image: url(https://img.icons8.com/ios/25/000000/menu--v5.png);
+    transition: none;
+  }
+  .main-header .sidebar span button:hover {
+    background-image: url(https://img.icons8.com/ios/25/000000/menu--v5.png);
+   
+  }
+  .main-header .cart span button {
+ 
+    background-image: url(https://img.icons8.com/color/30/000000/shopping-cart.png);
+    background-color: transparent ;
+    height: 30px;
+    width: 30px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 0 10px 0 30px;
+    transition: all 0.4s ease;
+  }
+  .main-header h1 {
+    padding: 10px 0 10px 50px;
+    font-size: 1.8rem;
+  }
+}
+

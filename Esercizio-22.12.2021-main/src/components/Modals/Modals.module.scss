@@ -1,0 +1,70 @@
+
+.modals{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    
+    color: white;
+    background-color: red;
+    position: absolute;
+    margin: auto;
+    top: -100px; 
+    left: 0;
+    right: 0;        
+    height: 100px;
+    width: 200px;
+    transition: all 0.5s ease;
+
+}
+
+.delete{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    position: absolute;
+    margin: auto;
+    top: 100%; 
+    left: 0;
+    right: 0;        
+    height: 100px;
+    width: 200px;
+    transition: all 0.5s ease;
+    z-index: 99;
+    animation-name: fader;
+    animation-duration: 3s;
+
+}
+@keyframes fader {
+    0%   {top:-150px;}
+    25%  {top:300px;}
+    50%  {top:300px;}
+    75%  {top:-150px;}
+    100% {top: -150px;}
+  }
+  .create{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    background-color: lightskyblue;
+    position: absolute;
+    margin: auto;
+    top: 100%; 
+    left: 0;
+    right: 0;        
+    height: 100px;
+    width: 200px;
+    transition: all 0.5s ease;
+    z-index: 99;
+    animation-name: fader;
+    animation-duration: 3s;
+
+}

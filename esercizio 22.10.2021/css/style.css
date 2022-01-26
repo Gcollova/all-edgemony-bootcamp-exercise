@@ -1,0 +1,120 @@
+.pulsante {
+  color: black;
+  background-color: #44ebd2;
+  border: 2px #44ebd2 solid;
+  display: inline-block;
+  text-decoration: none;
+  padding: 13px 50px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  margin: 15px auto 0 auto;
+}
+
+.pulsante:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+h1 {
+  margin: 0px;
+  color: #fff;
+  font-weight: 700;
+  padding-top: 50px;
+}
+h2 {
+  color: #44ebd2;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  height: 200px;
+  width: 100%;
+  background-color: rgb(32, 32, 32);
+  text-align: center;
+}
+
+#myExercise {
+  width: 100%;
+  min-height: calc(100vh - 280px);
+  background-color: white;
+}
+
+#mainContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+#mainContainer div {
+  color: #fff;
+  width: 300px;
+  height: auto;
+  background-color: #464646;
+}
+
+#mainContainer .form {
+  border-radius: 5px;
+}
+#registrazione label {
+  text-align: left;
+}
+#mainContainer .risposte {
+  border-radius: 5px;
+}
+#mainContainer .risposte textarea {
+  resize: none;
+  overflow: scroll;
+
+  margin: 45px 20px;
+}
+#accountList {
+  background-color: white;
+  margin: 0px auto;
+}
+
+#mainContainer .form form {
+  padding: 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#mainContainer .form input {
+  margin: 5px 0px;
+  width: 100%;
+  display: inline-block;
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 9px 1px;
+  border: none;
+  font-size: 12px;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(32, 32, 32);
+  text-align: center;
+  color: #fff;
+}
+
+footer p {
+  padding-top: 35px;
+  margin: 0px;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #44ebd2;
+}

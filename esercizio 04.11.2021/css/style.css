@@ -1,0 +1,231 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+h1 {
+  margin: 0px;
+  color: rgb(10, 1, 61);
+  font-weight: 700;
+}
+h2 {
+  color: rgb(10, 1, 61);
+  font-size: 20px;
+  font-weight: 400;
+}
+/* HEADER */
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+#gitExercise {
+  align-items: flex-end;
+  display: flex;
+  color: black;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+#gitLink {
+   
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+#gitExercise p {
+  display: block;
+  margin-bottom: 16px;
+  color: black;
+  font-weight: 400;
+}
+#gitExercise a:hover {
+  color: #44ebd2;
+}
+
+#title {
+  display: block;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+/* /HEADER */
+
+#myExercise {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  background-color: rgba(235, 235, 235, 0.993);
+  display: flex;
+  justify-content: center;
+}
+
+#form-div {
+  width: 900px;
+  height: auto;
+  color: #fff;
+  background-color: #192d38;
+  border: 3px rgb(72, 255, 0) solid ;
+  border-radius: 10px;
+  
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  
+  text-align: center;
+  
+}
+#form-div form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+  font-weight: 400;
+  
+}
+#form-div form input{
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 2px;
+  
+  
+}
+#form-div form input:focus {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  
+  
+}
+#form-div li {
+  justify-content: center;
+  list-style: none;
+  text-align: left;
+  border: 1px solid #fff;
+  padding-left: 10px;
+  margin-right: 20px;
+  
+  
+  
+  
+  
+}
+#form-div ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 15px;
+  column-gap: 15px;
+  
+   
+  padding-inline-start: 20px;
+  
+  
+}
+#unordered-div {
+  border: 1px solid rgb(109, 109, 109);
+  border-radius: 5px;
+  margin: 0px 5px;
+}
+
+/* FOOTER */
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#iconContact {
+    
+  padding-right:50px;
+}
+#iconContact img {
+  padding-right: 10px;
+}
+
+footer p {
+  padding-top: 0px;
+
+  margin-left: 50px;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #44ebd2;
+}
+
+/* FOOTER */
+
+@media all and (max-width: 990px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+      color:rgb(10, 1, 61) ;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  h2 {
+    color: rgb(10, 1, 61);
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+  }
+  #title {
+    display: block;
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+  #gitExercise {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    margin-top: 25px;
+    margin-right: 10px;
+  }
+  #gitExercise a {
+    display: block;
+    margin-bottom: 0px;
+    color: #fff;
+  }
+  #gitExercise img {
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+  /* /HEADER */
+
+  #myExercise {
+    width: 100%;
+    min-height: calc(100vh - 200px);
+    background-color: white;
+  }
+}
+
+
+#form-div ul {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 15px;
+  column-gap: 15px;
+  
+   
+  padding-inline-start: 20px; 
+  
+}

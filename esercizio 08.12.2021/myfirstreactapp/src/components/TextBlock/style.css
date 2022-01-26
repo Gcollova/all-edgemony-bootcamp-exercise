@@ -1,0 +1,20 @@
+.title-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.title-price h2:first-child{
+    padding-right: 25px;
+    
+
+}
+.specs{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    
+}
+.specs p{
+    width: 150px;
+}

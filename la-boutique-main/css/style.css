@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@400;700&family=Press+Start+2P&display=swap");
+:root {
+  --main_color: #1396ab;
+}
+
+body {
+  font-family: "Mohave", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: var(--main_color);
+}
+
+img {
+  width: 90px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.cart {
+  text-align: right;
+  width: 80px;
+}
+
+.wrapper {  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.overlay{
+  
+  position: absolute;
+  top: 0;
+  height: 350px;
+  width: 100%;
+  
+  z-index: 2;
+}
+.wrapper .__hero{
+  position: relative;
+  width: 100%;
+  height: 350px;
+  
+  background-image: url(https://media.istockphoto.com/photos/what-you-wear-should-make-you-feel-free-and-comfortable-picture-id1297633356);
+  background-size:cover ;
+  z-index: 3;
+  transition: all 1s ease-in;
+  
+}
+
+.wrapper .__hero .intestazione{
+  position: absolute;
+  margin: 30px 0 0 30px;
+  
+  
+  color: white;
+  font-size: 2rem;
+  text-shadow: 1px black;
+}
+.wrapper .__hero .intestazione h2 {
+  margin-bottom: 0;
+}
+.cart{  
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: auto;
+  transition: all 0.8s ease;
+}
+.in-cart{
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+}
+.in-cart button {
+  margin-left: 6px;
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  
+  
+}
+.in-cart button:hover{
+  transform: scale(1.1);
+}
+.hide {
+  display: none;
+  top: 0;
+  z-index: -3;
+}
+
+.wrapper__titles {
+  height: 150px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.wrapper__titles h2 {
+  font-size: 2rem;
+}
+
+.wrapper__titles h4 {
+  font-size: 0.9rem;
+}
+.button-div{
+  position: absolute;
+  left: 50px;
+  height: 100%; 
+  z-index: 3;
+  
+}
+.button {
+  font-family: "Mohave";
+  font-weight: bolder;
+  border: 3px solid black;
+  background: #fff;
+  padding: 10px;
+  margin: 0 0 40px 10px;
+  text-align: center;
+  z-index: 3;
+}
+
+.wrapper__products {
+ 
+  
+  margin: 0 40px 0 0;
+  height: 38vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  
+
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 7.5px;
+  padding: 10px;
+
+  max-width: 150px;
+
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 12px;
+
+  
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.product:hover {
+  
+  border: 2px solid var(--main_color);
+}
+
+.product:active {
+  
+  transform: scale(1);
+}
+
+.product p {
+  align-self: flex-start;
+}
+.product button{
+  border: 2px solid black;
+  background-color: white;
+  font-family: "Mohave";
+  font-weight: bolder;
+  transition: all 0.5s ease;
+}
+.product button:hover{
+  transform: scale(1.1);
+}

@@ -1,0 +1,70 @@
+.all{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-right: 120px;
+}
+h4{
+    
+    margin-bottom: 3px;
+}
+.colors{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    border: 3px solid black;
+    border-radius: 10px;
+    
+    
+}
+.colors .black {
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    border: 3px solid white;
+    transition: all 0.6s ease;
+    
+}
+.colors .black:hover{
+    border: 3px solid green;
+}
+.colors .blue {
+    background-color: blue;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    border: 3px solid white;
+    transition: all 0.6s ease;
+}
+.colors .blue:hover{
+    border: 3px solid green;
+}
+.colors .red {
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    border: 3px solid white;
+    transition: all 0.6s ease;
+}
+.colors .red:hover{
+    border: 3px solid green;
+}
+.colors .yellow {
+    background-color: yellow;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    border: 3px solid white;
+    transition: all 0.6s ease;
+}
+.colors .yellow:hover{
+    border: 3px solid green;
+}

@@ -1,0 +1,201 @@
+.changeColor {
+  color: #aeff00;
+}
+
+.changeColorTwo {
+  color: #ff00d4;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+h1 {
+  margin: 0px;
+  color: rgb(10, 1, 61);
+  font-weight: 700;
+}
+h2 {
+  color: rgb(10, 1, 61);
+  font-size: 20px;
+  font-weight: 400;
+}
+/* HEADER */
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+#gitExercise {
+  align-items: flex-end;
+  display: flex;
+  color: black;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+#gitLink {
+   
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+#gitExercise p {
+  display: block;
+  margin-bottom: 16px;
+  color: black;
+  font-weight: 400;
+}
+#gitExercise a:hover {
+  color: #44ebd2;
+}
+
+#title {
+  display: block;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+/* /HEADER */
+
+#myExercise {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  background-color: rgba(0, 12, 80, 0.993);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle {
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: #44ebd2;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#circle p{
+  font-size: 35px;
+}
+
+#result{
+  height: 200px;
+  width: auto;
+  border-radius: 5px;
+  background-color:rgba(0, 12, 80, 0.993) ;
+  display: flex;
+  color: white;
+  font-size: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+#equal {
+  font-size: 15px;
+  border: none;
+  max-width: 100px;
+  margin-top: 90px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 25px;
+}
+/* FOOTER */
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#iconContact {
+    
+  padding-right:50px;
+}
+#iconContact img {
+  padding-right: 10px;
+}
+
+footer p {
+  padding-top: 0px;
+
+  margin-left: 50px;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #44ebd2;
+}
+
+/* FOOTER */
+
+@media all and (max-width: 990px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+      color:rgb(10, 1, 61) ;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  h2 {
+    color: rgb(10, 1, 61);
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+  }
+  #title {
+    display: block;
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+  #gitExercise {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    margin-top: 25px;
+    margin-right: 10px;
+  }
+  #gitExercise a {
+    display: block;
+    margin-bottom: 0px;
+    color: #fff;
+  }
+  #gitExercise img {
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+  /* /HEADER */
+
+  #myExercise {
+    width: 100%;
+    min-height: calc(100vh - 200px);
+    background-color: rgba(0, 12, 80, 0.993);
+    padding-top: 60px;
+  }
+}
+
+

@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.game-table {
+  height: 600px;
+  width: 800px;
+  border: 3px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.game-table div {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+}
+.nemesis {
+  background-color: red;
+    /* background: url(./img/1ST\ FRAME.PNG);
+    background-size:cover ; */
+  
+}
+.player{
+  background-color: green;
+    /* background: url(./img/3b0394153492f7a2e31e80bb9e4c4fb5.gif);
+    background-size:cover ; */
+}
+
+.going-left{
+    background: url(./img/WALK_1.PNG);
+    background-size:cover ;
+}
+ .bullet{
+     width: 40px;
+     height: 40 px;
+      background-color: orange;
+/*       background: url(./img/bullet.png);
+     background-size: cover; */
+ }
+ .explosion {
+     background-color: black ;
+ }

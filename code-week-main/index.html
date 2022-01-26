@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            
+            <div class="sidebar">                
+                <span>
+                    <button  id="sidebar-btn"></button>
+                </span>
+            </div>            
+            <h1>Shoppify</h1>
+            <div class="cart">                
+                <span>
+                    <button id="cart-btn"></button>
+                    <p class="counter">0</p>
+                </span>
+            </div>            
+        </div>        
+    </header>
+    <main>
+        <div class="alert disappear">
+            <h2>Il Prodotto che hai Selezionato è gia <br>
+                all'interno del carrello, modifica la <br>
+                quantità da lì!
+            </h2>
+            <button class="alert-btn">Ok, Ho Capito</button>
+        </div>
+        
+        <div class="modals left hidden-left">
+            <ul>
+                <li><a href="#women">Prodotti Donna</a></li>
+                <li><a href="#men">Prodotti Uomo</a></li>
+                <li><a href="#jewelery">Gioielli</a></li>
+                <li><a href="#electronics">Elettronica</a></li>
+            </ul>
+            
+        </div>
+        <div class="modals right hidden-right">
+            <h4>Totale: <strong class="total-price">0</strong></h4>
+            <div class="cart-container">
+                <ul></ul>
+                
+            </div>
+            <a class="checkout" href="#checkout">Checkout</a>                
+
+             
+        </div>
+        <div class="main-container">
+            <br>
+            <!-- <h2>Abbigliamento Donna</h2>
+            <div id="women-clothes" class="categories"></div> -->
+            
+            <!-- <h2>Abbigliamento Uomo</h2>
+            <div id="men-clothes" class="categories"></div>
+            <h2>Elettronica</h2>
+            <div id="electronics" class="categories"></div> -->
+        </div>
+    </main>
+    <footer>
+        <div class="about">
+            <h3>Developed by <a href="#">Giorgio Collovà</a></h3>
+        </div>
+    </footer>
+    
+    
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
